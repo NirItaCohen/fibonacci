@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.second-headline {
+  font-weight: 400;
+}
+#fibo-index {
+  width: 15%;
+}
+.error-message {
+  border-radius: 5px;
+  padding: 1px;
+  display: none;
+}
+.btn {
+  padding: 4px 0.5rem;
+}
+.error {
+  color: #d9534f;
+  border: solid 1px #d9534f;
+}

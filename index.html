@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Fibonacci</title>
+  </head>
+  <body>
+    <div class="container-md container-lg containr-xl container-xxl">
+      <h1 class="display-4 py-5">Fibonacci Calculator</h1>
+      <div class="col-12 d-flex">
+        <div class="col-xl-3 col-lg-3 col-md-4 d-flex flex-column">
+          <div class="d-flex justify-content-between mb-1">
+            <h3 class="mb-0 second-headline fw-light">The Fibonnaci Of</h3>
+            <input
+              class="h-100"
+              type="number"
+              name="fiboIndexNumber"
+              id="fibo-index"
+            />
+          </div>
+          <div class="col-12 d-flex justify-content-end">
+            <span
+              class="error-message border border-danger-subtle bg-danger-subtle text-danger-subtle"
+              >Some Text - error</span
+            >
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-8 align-self-start">
+          <button class="btn btn-primary calculate mx-3">is</button>
+          <span class="result border-bottom border-dark pb-2"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
