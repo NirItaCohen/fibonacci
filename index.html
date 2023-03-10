@@ -15,11 +15,11 @@
     <div class="container-md container-lg containr-xl container-xxl">
       <h1 class="display-4 py-5">Fibonacci Calculator</h1>
       <div class="col-12 d-flex">
-        <div class="col-xl-3 col-lg-3 col-md-4 d-flex flex-column">
+        <div class="col-xl-3 col-lg-4 col-md-6 d-flex flex-column">
           <div class="d-flex justify-content-between mb-1">
             <h3 class="mb-0 second-headline fw-light">The Fibonnaci Of</h3>
             <input
-              class="h-100"
+              class="h-100 w-25"
               type="number"
               name="fiboIndexNumber"
               id="fibo-index"
@@ -27,7 +27,7 @@
           </div>
           <div class="col-12 d-flex justify-content-end">
             <span
-              class="error-message border border-danger-subtle bg-danger-subtle text-danger-subtle"
+              class="error-message border border-danger-subtle bg-danger-subtle text-danger"
               >Some Text - error</span
             >
           </div>
@@ -36,6 +36,31 @@
           <button class="btn btn-primary calculate mx-3">is</button>
           <span class="result border-bottom border-dark pb-2"></span>
         </div>
+      </div>
+      <div class="col-12 d-flex flex-column">
+        <div>
+          <input
+            type="checkbox"
+            name="save-calculations"
+            id="save-calculations"
+            class="align-self-start form-check-input"
+          />
+          <label for="save-calculations" class="form-check-label"
+            >Save calculations</label
+          >
+        </div>
+        <h1 class="display-5 py-3 results-headline">Results</h1>
+        <select
+          class="form-select form-select-lg mb-3 sort"
+          aria-label=".form-select-lg sort"
+        >
+          <option value="" disabled selected>Sort by</option>
+          <option value="numberAsc">Number asc</option>
+          <option value="numberDesc">Number desc</option>
+          <option value="dateDesc">Date asc</option>
+          <option value="">Date desc</option>
+        </select>
+        <ul class="list-unstyled result-display-ul"></ul>
       </div>
     </div>
 

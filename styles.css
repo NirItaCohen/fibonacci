@@ -12,6 +12,7 @@ body {
 }
 #fibo-index {
   width: 15%;
+  text-align: center;
 }
 .error-message {
   border-radius: 5px;
@@ -24,4 +25,16 @@ body {
 .error {
   color: #d9534f;
   border: solid 1px #d9534f;
+}
+.result-spinner {
+  border-width: 0.25rem;
+}
+.sort {
+  width: 20%;
+  background-color: #1abc9c;
+  color: #fff;
+  border-radius: 3px;
+  text-indent: 0.01px;
+
+  /* -webkit-appearance: button; */
 }
